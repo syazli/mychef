@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyChef" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="color_text">@color/black</item>
+        <item name="color_subtitle_text">@color/darkGrey</item>
+        <item name="color_button_text">@color/white</item>
+        <item name="color_primary">@color/green</item>
+        <item name="color_list_item_divider">@color/grey</item>
+        <item name="color_dialog_primary">@color/black</item>
+        <item name="color_dialog_background">@color/white</item>
+        <item name="color_button">@color/darkerGrey</item>
+
+    </style>
+
+    <style name="SearchEditTextStyle" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:background">@null</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <!--    <style name="AlertDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog">-->
+        <item name="android:windowBackground">@drawable/bg_cornered_dialog</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowMinWidthMajor">85%</item>
+        <item name="android:windowMinWidthMinor">85%</item>
+        <item name="android:textColorAlertDialogListItem">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:textColorTertiary">@color/black</item>
+        <item name="colorPrimary">?attr/color_dialog_primary</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="android:listPreferredItemPaddingStart">25dp</item>
+        <item name="android:listPreferredItemPaddingEnd">25dp</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.ButtonBar.AlertDialog">
+        <item name="android:textColor">?attr/color_button_text</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.ButtonBar.AlertDialog">
+        <item name="android:textColor">?attr/color_button_text</item>
+    </style>
+
+    <style name="UCropActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CropTitleStyleBg</item>
+
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="CropTitleStyleBg">
+        <item name="android:background">?attr/color_primary</item>
+    </style>
+</resources>

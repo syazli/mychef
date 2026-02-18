@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "Roasted Veggie Taco Salad",
+    "ingredients": 4 ,
+    "duration": "40 min",
+    "category": "Salad",
+    "imageName": "food_1"
+  },
+  {
+    "id": 2,
+    "title": "Grilled Chicken Bowl",
+    "ingredients": 2,
+    "duration": "30 min",
+    "category": "Main Dish",
+    "imageName": "food_2"
+  },
+  {
+    "id": 3,
+    "title": "Spaghetti Carbonara",
+    "ingredients": 3,
+    "duration": "25 min",
+    "category": "Main Dish",
+    "imageName": "food_3"
+  },
+  {
+    "id": 4,
+    "title": "Classic Beef Burger",
+    "ingredients": 2,
+    "duration": "35 min",
+    "category": "Main Dish",
+    "imageName": "food_4"
+  },
+  {
+    "id": 5,
+    "title": "Avocado Toast",
+    "ingredients": 1,
+    "duration": "10 min",
+    "category": "Side Dish",
+    "imageName": "food_5"
+  },
+  {
+    "id": 6,
+    "title": "Tom Yum Soup",
+    "ingredients": 4,
+    "duration": "45 min",
+    "category": "Soup",
+    "imageName": "food_6"
+  },
+  {
+    "id": 7,
+    "title": "Chicken Fried Rice",
+    "ingredients": 3,
+    "duration": "20 min",
+    "category": "Main Dish",
+    "imageName": "food_7"
+  },
+  {
+    "id": 8,
+    "title": "Chocolate Pancakes",
+    "ingredients": 2,
+    "duration": "15 min",
+    "category": "Dessert",
+    "imageName": "food_8"
+  },
+  {
+    "id": 9,
+    "title": "Caesar Salad",
+    "ingredients": 2,
+    "duration": "20 min",
+    "category": "Salad",
+    "imageName": "food_9"
+  },
+  {
+    "id": 10,
+    "title": "Grilled Salmon",
+    "ingredients": 2,
+    "duration": "25 min",
+    "category": "Main Dish",
+    "imageName": "food_10"
+  },
+  {
+    "id": 11,
+    "title": "Mango Lassi",
+    "ingredients": 2,
+    "duration": "5 min",
+    "category": "Drinks",
+    "imageName": "food_11"
+  },
+  {
+    "id": 12,
+    "title": "Strawberry Lemonade",
+    "ingredients": 4,
+    "duration": "10 min",
+    "category": "Drinks",
+    "imageName": "food_12"
+  },
+  {
+    "id": 13,
+    "title": "Greek Salad",
+    "ingredients": 3,
+    "duration": "15 min",
+    "category": "Salad",
+    "imageName": "food_13"
+  },
+  {
+    "id": 14,
+    "title": "Creamy Mushroom Soup",
+    "ingredients": 4,
+    "duration": "30 min",
+    "category": "Soup",
+    "imageName": "food_14"
+  },
+  {
+    "id": 15,
+    "title": "Beef Rendang",
+    "ingredients": 4,
+    "duration": "90 min",
+    "category": "Main Dish",
+    "imageName": "food_15"
+  },
+  {
+    "id": 16,
+    "title": "Garlic Butter Fries",
+    "ingredients": 2,
+    "duration": "25 min",
+    "category": "Side Dish",
+    "imageName": "food_16"
+  },
+  {
+    "id": 17,
+    "title": "Tiramisu",
+    "ingredients": 6,
+    "duration": "30 min",
+    "category": "Dessert",
+    "imageName": "food_17"
+  },
+  {
+    "id": 18,
+    "title": "Matcha Smoothie",
+    "ingredients": 1,
+    "duration": "5 min",
+    "category": "Drinks",
+    "imageName": "food_18"
+  },
+  {
+    "id": 19,
+    "title": "Truffle Mac and Cheese",
+    "ingredients": 3,
+    "duration": "35 min",
+    "category": "Side Dish",
+    "imageName": "food_19"
+  },
+  {
+    "id": 20,
+    "title": "Mango Sticky Rice",
+    "ingredients": 2,
+    "duration": "40 min",
+    "category": "Dessert",
+    "imageName": "food_20"
+  }
+]

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ingredient_card_size">80dp</dimen>
+    <dimen name="text_size_small3">10sp</dimen>
+    <dimen name="text_size_small2">12sp</dimen>
+    <dimen name="text_size_small1">14sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_medium1">18sp</dimen>
+    <dimen name="text_size_medium2">20sp</dimen>
+    <dimen name="text_size_medium3">22sp</dimen>
+    <dimen name="text_size_large1">26sp</dimen>
+    <dimen name="text_size_large2">32sp</dimen>
+    <dimen name="text_size_large3">40sp</dimen>
+    <dimen name="text_size_large4">50sp</dimen>
+</resources>

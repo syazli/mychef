@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyChef</string>
+    <string name="showing_results">Showing %s results</string>
+
+    <string name="setting_profile_image">Image Picker</string>
+    <string name="select_an_action">Please choose a method</string>
+    <string name="permission_setting_camera_permission">Camera Permission</string>
+    <string name="permission_setting_camera_message">Required for update and upload profile picture purposes. (Optional)</string>
+    <string name="permission_setting_camera_dialog">MyChef requires camera permission to update and upload profile image.</string>
+    <string name="error_update_image">Press \"Retry\" to update profile image again.</string>
+    <string name="confirm_title">Confirm save?</string>
+    <string name="confirm_subtitle">Are you sure you want to save this recipe?</string>
+    <string name="saved_success">Saved Successfully</string>
+    <string name="save_success_subtitle">Your recipe has been saved successfully. Add another recipe?</string>
+    <string name="delete_title">Confirm delete?</string>
+    <string name="delete_subtitle">Are you sure you want to delete this recipe?</string>
+    <string name="success_delete">Deleted Successfully</string>
+    <string name="success_delete_sub">Recipe has been deleted successfully</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="retry">Retry</string>
+    <string name="error">Error</string>
+    <string name="confirm">Confirm</string>
+    <string name="ok">Okay</string>
+
+
+    <string name="app_settings">App Settings</string>
+    <string name="add_new_recipe">Add New Recipe</string>
+    <string name="save">save</string>
+
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvGreeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello foodie!"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#111111"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Which recipe would you like to cook?"
+                android:textSize="14sp"
+                android:textColor="#777777"
+                android:layout_below="@id/tvGreeting"
+                android:layout_marginTop="6dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tl_search"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/tvSubtitle"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:clickable="true"
+                android:focusable="true"
+                app:strokeColor="#E0E0E0"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_search"
+                        app:tint="#A0A0A0"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/etSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Search recipes..."
+                        android:textColor="#1A1A1A"
+                        android:textSize="14sp"
+                        android:gravity="center|start" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvCategories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#111111"
+                android:layout_below="@id/tl_search"
+                android:layout_marginTop="20dp" />
+
+            <GridView
+                android:id="@+id/gv_product_type"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:layout_below="@id/tvCategories"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:numColumns="3"
+                android:verticalSpacing="9dp"
+                android:horizontalSpacing="9dp"
+                android:stretchMode="columnWidth" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Favourites"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#111111"
+                android:layout_below="@id/gv_product_type"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_see_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/gv_product_type"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_see_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See All"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#111111"
+                    android:layout_marginEnd="6dp" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_right" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/list_item_food" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddRecipe"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        app:tint="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</RelativeLayout>

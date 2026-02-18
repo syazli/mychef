@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="top"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/ivDragHandle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_drag"
+        app:tint="#BBBBBB"
+        android:contentDescription="Drag to reorder"/>
+
+    <TextView
+        android:id="@+id/tvStepNumber"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/step_number_bg"
+        android:text="1"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etStep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:maxLines="4"
+            android:imeOptions="actionNext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/btnRemoveStep"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="6dp"
+        android:src="@drawable/ic_new_delete"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="6dp"
+        app:tint="#E57373"
+        android:contentDescription="Remove step"/>
+
+</LinearLayout>

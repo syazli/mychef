@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/imgFood"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Roasted Veggie Taco Salad with Chili Crema"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintStart_toEndOf="@id/imgFood"
+            app:layout_constraintEnd_toStartOf="@id/ivFavorite"
+            app:layout_constraintTop_toTopOf="@id/imgFood"
+            android:layout_marginStart="12dp"/>
+
+        <ImageView
+            android:id="@+id/ivIngredient"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/ic_ingredients"
+            app:layout_constraintStart_toStartOf="@id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/tvServing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 Ingredients"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            app:layout_constraintStart_toEndOf="@id/ivIngredient"
+            app:layout_constraintTop_toTopOf="@id/ivIngredient"
+            android:layout_marginStart="5dp"/>
+
+        <ImageView
+            android:id="@+id/ivDuration"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/ic_duration"
+            app:layout_constraintStart_toEndOf="@id/tvServing"
+            app:layout_constraintTop_toTopOf="@id/tvServing"
+            android:layout_marginStart="12dp"/>
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40 min"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            app:layout_constraintStart_toEndOf="@id/ivDuration"
+            app:layout_constraintTop_toTopOf="@id/ivDuration"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SALAD"
+            android:textSize="11sp"
+            android:textColor="@android:color/white"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/bg_category_badge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/imgFood"/>
+
+        <ImageView
+            android:id="@+id/ivFavorite"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_empty_heart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imgFood"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

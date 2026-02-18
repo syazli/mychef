@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="category_type_list">
+        <item>Salad</item>
+        <item>Main Dish</item>
+        <item>Side Dish</item>
+        <item>Dessert</item>
+        <item>Soup</item>
+        <item>Drinks</item>
+    </string-array>
+
+    <integer-array name="category_type_drawable">
+        <item>@drawable/category_salad</item>
+        <item>@drawable/category_main</item>
+        <item>@drawable/category_side</item>
+        <item>@drawable/category_dessert</item>
+        <item>@drawable/category_soup</item>
+        <item>@drawable/category_drinks</item>
+    </integer-array>
+
+    <string-array name="profile_photo_option">
+        <item>Take a photo</item>
+        <item>Choose from gallery</item>
+
+    </string-array>
+</resources>

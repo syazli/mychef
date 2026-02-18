@@ -1,0 +1,528 @@
+[
+  {
+    "id": 1,
+    "recipeId": 1,
+    "about": "A vibrant and hearty taco salad loaded with oven-roasted vegetables, crispy tortilla chips, and a zesty lime dressing. A colorful meat-free meal that is both satisfying and nutritious.",
+    "ingredients": [
+      "1 red bell pepper, chopped",
+      "1 zucchini, diced",
+      "1 cup cherry tomatoes",
+      "1 can black beans, drained",
+      "2 cups romaine lettuce, chopped",
+      "1 cup corn kernels",
+      "1 avocado, sliced",
+      "Tortilla chips, crushed",
+      "2 tbsp olive oil",
+      "1 tsp cumin",
+      "Salt and pepper to taste",
+      "Lime juice for dressing"
+    ],
+    "instructions": [
+      "Preheat oven to 200°C. Toss bell pepper, zucchini, and cherry tomatoes with olive oil, cumin, salt and pepper.",
+      "Spread vegetables on a baking tray and roast for 20-25 minutes until tender and slightly charred.",
+      "While vegetables roast, warm the black beans in a small pan over medium heat for 5 minutes.",
+      "Arrange chopped romaine lettuce in a large salad bowl as the base.",
+      "Top the lettuce with roasted vegetables, black beans, corn, and avocado slices.",
+      "Scatter crushed tortilla chips over the top for crunch.",
+      "Drizzle with lime juice and your favourite dressing. Toss lightly and serve immediately."
+    ]
+  },
+  {
+    "id": 2,
+    "recipeId": 2,
+    "about": "A wholesome and protein-packed grilled chicken bowl served over fluffy rice with fresh vegetables and a savory sauce. Perfect for a balanced and filling meal any day of the week.",
+    "ingredients": [
+      "2 chicken breasts",
+      "1 cup jasmine rice",
+      "1 cup broccoli florets",
+      "1 carrot, julienned",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "1 tsp garlic powder",
+      "1 tsp ginger powder",
+      "Salt and pepper to taste",
+      "Sesame seeds for garnish",
+      "Spring onions, sliced"
+    ],
+    "instructions": [
+      "Cook jasmine rice according to package instructions and set aside.",
+      "Season chicken breasts with garlic powder, ginger powder, salt and pepper on both sides.",
+      "Heat a grill pan over medium-high heat and grill chicken for 6-7 minutes per side until cooked through.",
+      "Rest the chicken for 5 minutes then slice into strips.",
+      "Blanch broccoli and carrots in boiling water for 3 minutes, then drain.",
+      "Mix soy sauce and sesame oil together to make the sauce.",
+      "Assemble bowls with rice as the base, topped with chicken, broccoli, and carrots.",
+      "Drizzle sauce over the bowl and garnish with sesame seeds and spring onions."
+    ]
+  },
+  {
+    "id": 3,
+    "recipeId": 3,
+    "about": "A classic Italian pasta dish made with eggs, Parmesan cheese, crispy pancetta, and black pepper. Simple yet deeply satisfying, it comes together in minutes with just a handful of quality ingredients.",
+    "ingredients": [
+      "400g spaghetti",
+      "200g pancetta or guanciale, diced",
+      "4 egg yolks",
+      "1 whole egg",
+      "100g Parmesan cheese, grated",
+      "2 cloves garlic",
+      "Freshly ground black pepper",
+      "Salt for pasta water",
+      "Fresh parsley for garnish"
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to a boil. Cook spaghetti until al dente according to package directions.",
+      "In a bowl, whisk together egg yolks, whole egg, and grated Parmesan. Season generously with black pepper.",
+      "Cook pancetta in a large skillet over medium heat until crispy, about 5-7 minutes. Add garlic and cook 1 minute.",
+      "Reserve 1 cup of pasta water before draining the spaghetti.",
+      "Remove skillet from heat and add hot drained pasta to the pancetta.",
+      "Pour the egg and cheese mixture over the pasta, tossing quickly to coat.",
+      "Add pasta water a little at a time, tossing continuously until the sauce is creamy and silky.",
+      "Serve immediately topped with extra Parmesan and freshly cracked black pepper."
+    ]
+  },
+  {
+    "id": 4,
+    "recipeId": 4,
+    "about": "A juicy and flavourful classic beef burger with all the essential toppings. Made from scratch with seasoned ground beef patties, fresh vegetables, and toasted brioche buns for the ultimate burger experience.",
+    "ingredients": [
+      "500g ground beef (80/20 fat ratio)",
+      "2 brioche burger buns",
+      "2 slices cheddar cheese",
+      "2 lettuce leaves",
+      "2 tomato slices",
+      "1 red onion, sliced",
+      "4 pickles",
+      "2 tbsp mayonnaise",
+      "1 tbsp ketchup",
+      "1 tsp mustard",
+      "Salt and black pepper",
+      "1 tbsp butter for toasting"
+    ],
+    "instructions": [
+      "Divide ground beef into two equal portions and shape into patties slightly wider than the buns. Season both sides with salt and pepper.",
+      "Heat a cast iron skillet or grill pan over high heat until very hot.",
+      "Cook patties for 3-4 minutes per side for medium doneness. Place cheese on top in the last minute of cooking.",
+      "Toast the brioche buns with butter in the same pan until golden, about 1-2 minutes.",
+      "Mix mayonnaise, ketchup, and mustard together to make the burger sauce.",
+      "Spread sauce on both bun halves.",
+      "Layer lettuce, tomato, and red onion on the bottom bun.",
+      "Place the cheesy patty on top, add pickles, and close with the top bun. Serve immediately."
+    ]
+  },
+  {
+    "id": 5,
+    "recipeId": 5,
+    "about": "A trendy and delicious avocado toast that is creamy, crunchy, and ready in minutes. Topped with fresh avocado, a perfectly cooked egg, and a sprinkle of chili flakes for a simple yet satisfying meal.",
+    "ingredients": [
+      "2 slices sourdough bread",
+      "1 ripe avocado",
+      "2 eggs",
+      "1 lemon, juiced",
+      "Chili flakes",
+      "Salt and black pepper",
+      "Fresh microgreens or rocket leaves",
+      "Olive oil drizzle"
+    ],
+    "instructions": [
+      "Toast the sourdough bread slices until golden and crisp.",
+      "Halve the avocado, remove the pit, and scoop the flesh into a bowl.",
+      "Mash the avocado with lemon juice, salt, and pepper until your desired consistency.",
+      "Poach or fry eggs to your liking — soft poached eggs work best.",
+      "Spread the mashed avocado generously over each toast slice.",
+      "Top each toast with an egg, a pinch of chili flakes, and fresh microgreens.",
+      "Finish with a drizzle of olive oil and serve immediately."
+    ]
+  },
+  {
+    "id": 6,
+    "recipeId": 6,
+    "about": "A bold and aromatic Thai soup bursting with the flavours of lemongrass, kaffir lime, galangal, and fresh chili. Tom Yum is tangy, spicy, and deeply comforting — a true staple of Thai cuisine.",
+    "ingredients": [
+      "500ml chicken or vegetable broth",
+      "200g shrimp, peeled",
+      "2 stalks lemongrass, bruised",
+      "3 kaffir lime leaves",
+      "4 slices galangal",
+      "2 Thai chilies, sliced",
+      "200g mushrooms, halved",
+      "3 tbsp fish sauce",
+      "2 tbsp lime juice",
+      "1 tsp sugar",
+      "Fresh coriander for garnish",
+      "2 spring onions, sliced"
+    ],
+    "instructions": [
+      "Bring broth to a boil in a medium pot over medium-high heat.",
+      "Add lemongrass, galangal, and kaffir lime leaves. Simmer for 5 minutes to infuse the broth.",
+      "Add Thai chilies and mushrooms. Cook for 3 minutes.",
+      "Add shrimp and cook for 2-3 minutes until pink and cooked through.",
+      "Season the soup with fish sauce, lime juice, and sugar. Adjust to taste — it should be sour, salty, and spicy.",
+      "Remove lemongrass, galangal, and lime leaves before serving.",
+      "Ladle into bowls and garnish with fresh coriander and spring onions. Serve hot."
+    ]
+  },
+  {
+    "id": 7,
+    "recipeId": 7,
+    "about": "A quick and satisfying fried rice dish packed with tender chicken, vegetables, and fluffy egg. Best made with day-old rice for that perfect wok-fried texture and smoky flavour.",
+    "ingredients": [
+      "3 cups cooked day-old jasmine rice",
+      "200g chicken breast, diced",
+      "2 eggs, beaten",
+      "1 cup mixed vegetables (peas, carrots, corn)",
+      "3 cloves garlic, minced",
+      "3 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1 tbsp sesame oil",
+      "2 tbsp vegetable oil",
+      "Salt and white pepper",
+      "Spring onions and sesame seeds for garnish"
+    ],
+    "instructions": [
+      "Heat vegetable oil in a wok or large frying pan over high heat until smoking.",
+      "Add garlic and stir-fry for 30 seconds until fragrant.",
+      "Add diced chicken and cook for 4-5 minutes until golden and cooked through.",
+      "Push chicken to the side and pour beaten eggs into the centre. Scramble until just set.",
+      "Add mixed vegetables and stir everything together for 2 minutes.",
+      "Add the cold rice, breaking up any clumps. Stir-fry for 3-4 minutes.",
+      "Season with soy sauce, oyster sauce, sesame oil, and white pepper. Toss well.",
+      "Garnish with spring onions and sesame seeds. Serve hot."
+    ]
+  },
+  {
+    "id": 8,
+    "recipeId": 8,
+    "about": "Indulgent and fluffy chocolate pancakes perfect for a weekend breakfast treat. Rich with cocoa flavour and topped with fresh berries and maple syrup for an irresistible morning stack.",
+    "ingredients": [
+      "1 cup all-purpose flour",
+      "3 tbsp cocoa powder",
+      "2 tbsp sugar",
+      "1 tsp baking powder",
+      "1/2 tsp baking soda",
+      "1 cup buttermilk",
+      "1 egg",
+      "2 tbsp melted butter",
+      "1 tsp vanilla extract",
+      "Pinch of salt",
+      "Fresh berries and maple syrup to serve"
+    ],
+    "instructions": [
+      "In a large bowl, whisk together flour, cocoa powder, sugar, baking powder, baking soda, and salt.",
+      "In a separate bowl, whisk buttermilk, egg, melted butter, and vanilla extract.",
+      "Pour the wet ingredients into the dry ingredients and stir until just combined. Do not overmix — lumps are fine.",
+      "Let the batter rest for 5 minutes.",
+      "Heat a non-stick pan over medium heat and lightly grease with butter.",
+      "Pour 1/4 cup batter per pancake. Cook until bubbles form on the surface, about 2-3 minutes.",
+      "Flip and cook for another 1-2 minutes until cooked through.",
+      "Stack and serve with fresh berries and maple syrup."
+    ]
+  },
+  {
+    "id": 9,
+    "recipeId": 9,
+    "about": "A timeless Caesar salad with crisp romaine lettuce, crunchy homemade croutons, shaved Parmesan, and a rich creamy Caesar dressing. Simple, classic, and always a crowd pleaser.",
+    "ingredients": [
+      "2 heads romaine lettuce, chopped",
+      "1 cup croutons",
+      "80g Parmesan cheese, shaved",
+      "3 tbsp Caesar dressing",
+      "1 clove garlic",
+      "1 tbsp lemon juice",
+      "1 tsp Worcestershire sauce",
+      "1 tsp Dijon mustard",
+      "Salt and black pepper"
+    ],
+    "instructions": [
+      "Wash and dry romaine lettuce thoroughly. Chop into bite-sized pieces.",
+      "Make croutons by toasting cubed bread with olive oil and garlic in the oven at 180°C for 10-12 minutes until golden.",
+      "Whisk together Caesar dressing, lemon juice, Worcestershire sauce, and Dijon mustard in a large bowl.",
+      "Add the romaine lettuce to the bowl and toss well to coat every leaf with dressing.",
+      "Add croutons and half the Parmesan and toss again.",
+      "Transfer to a serving plate and top with remaining Parmesan shavings.",
+      "Season with black pepper and serve immediately."
+    ]
+  },
+  {
+    "id": 10,
+    "recipeId": 10,
+    "about": "Perfectly grilled salmon fillets with a crispy skin and tender flaky flesh. Seasoned simply with lemon and herbs to let the natural flavour of the salmon shine through.",
+    "ingredients": [
+      "2 salmon fillets, skin-on",
+      "2 tbsp olive oil",
+      "2 cloves garlic, minced",
+      "1 lemon, zested and juiced",
+      "1 tsp dried dill or fresh dill",
+      "1 tsp paprika",
+      "Salt and black pepper",
+      "Lemon wedges to serve",
+      "Fresh parsley for garnish"
+    ],
+    "instructions": [
+      "Pat salmon fillets dry with paper towels. This ensures a crispy skin.",
+      "Mix olive oil, garlic, lemon zest, dill, paprika, salt, and pepper in a small bowl.",
+      "Rub the marinade all over the salmon fillets and let marinate for 15 minutes.",
+      "Heat a non-stick or cast iron skillet over medium-high heat.",
+      "Place salmon skin-side down and cook for 4-5 minutes without moving.",
+      "Flip carefully and cook for another 2-3 minutes until cooked to your liking.",
+      "Squeeze lemon juice over the fillets and garnish with fresh parsley.",
+      "Serve with lemon wedges and your choice of sides."
+    ]
+  },
+  {
+    "id": 11,
+    "recipeId": 11,
+    "about": "A creamy and refreshing Indian yogurt-based drink blended with ripe mango pulp. Mango Lassi is sweet, tangy, and incredibly cooling — perfect for hot days or alongside spicy food.",
+    "ingredients": [
+      "1 cup ripe mango pulp or 2 fresh mangoes",
+      "1 cup plain yogurt",
+      "1/2 cup cold milk",
+      "2 tbsp sugar or honey",
+      "1/4 tsp cardamom powder",
+      "Ice cubes",
+      "Pinch of saffron (optional)",
+      "Chopped pistachios for garnish"
+    ],
+    "instructions": [
+      "Peel and chop fresh mangoes if using whole fruit. Blend into a smooth pulp.",
+      "Add yogurt, cold milk, sugar, and cardamom to the blender with the mango pulp.",
+      "Blend everything together until smooth and frothy, about 1-2 minutes.",
+      "Taste and adjust sweetness as needed.",
+      "Fill glasses with ice cubes.",
+      "Pour the mango lassi over the ice.",
+      "Garnish with a pinch of saffron and chopped pistachios. Serve immediately."
+    ]
+  },
+  {
+    "id": 12,
+    "recipeId": 12,
+    "about": "A bright and refreshing homemade strawberry lemonade made with fresh strawberries and real lemon juice. Naturally sweet and perfectly tart, it is the ultimate summer drink.",
+    "ingredients": [
+      "2 cups fresh strawberries, hulled",
+      "4 lemons, juiced",
+      "1/2 cup sugar",
+      "1/2 cup water (for simple syrup)",
+      "3 cups cold water",
+      "Ice cubes",
+      "Fresh mint and lemon slices for garnish"
+    ],
+    "instructions": [
+      "Make simple syrup by combining sugar and 1/2 cup water in a small saucepan. Heat until sugar dissolves, then cool.",
+      "Blend strawberries until smooth. Strain through a fine mesh sieve to remove seeds.",
+      "In a large pitcher, combine strawberry puree, fresh lemon juice, and simple syrup.",
+      "Add 3 cups of cold water and stir well to combine.",
+      "Taste and adjust sweetness or tartness as preferred.",
+      "Fill glasses with ice cubes and pour in the strawberry lemonade.",
+      "Garnish with fresh mint leaves and lemon slices. Serve immediately."
+    ]
+  },
+  {
+    "id": 13,
+    "recipeId": 13,
+    "about": "A fresh and colourful Greek salad tossed with crisp vegetables, briny Kalamata olives, and creamy feta cheese, all dressed in a simple olive oil and herb dressing. Light, healthy, and full of Mediterranean flavour.",
+    "ingredients": [
+      "2 large tomatoes, chopped",
+      "1 cucumber, sliced",
+      "1 green bell pepper, chopped",
+      "1 red onion, thinly sliced",
+      "200g feta cheese, cubed",
+      "1/2 cup Kalamata olives",
+      "3 tbsp extra virgin olive oil",
+      "1 tbsp red wine vinegar",
+      "1 tsp dried oregano",
+      "Salt and black pepper"
+    ],
+    "instructions": [
+      "Chop tomatoes into wedges and slice cucumber into half-moons.",
+      "Chop green bell pepper into bite-sized chunks and thinly slice red onion.",
+      "Combine all vegetables in a large salad bowl.",
+      "Add Kalamata olives and feta cheese cubes on top.",
+      "Drizzle with extra virgin olive oil and red wine vinegar.",
+      "Sprinkle dried oregano, salt, and black pepper over the salad.",
+      "Toss gently to combine without breaking the feta too much. Serve fresh."
+    ]
+  },
+  {
+    "id": 14,
+    "recipeId": 14,
+    "about": "A rich and velvety mushroom soup made with a medley of fresh mushrooms, cream, and aromatic herbs. This comforting soup is deeply savoury with a smooth, luxurious texture that warms you from the inside out.",
+    "ingredients": [
+      "500g mixed mushrooms (button, cremini, shiitake)",
+      "1 onion, diced",
+      "3 cloves garlic, minced",
+      "2 tbsp butter",
+      "500ml vegetable or chicken broth",
+      "200ml heavy cream",
+      "1 tsp fresh thyme",
+      "2 tbsp all-purpose flour",
+      "Salt and black pepper",
+      "Fresh parsley and crusty bread to serve"
+    ],
+    "instructions": [
+      "Clean and slice mushrooms. Dice onion and mince garlic.",
+      "Melt butter in a large pot over medium heat. Sauté onion for 3-4 minutes until softened.",
+      "Add garlic and thyme, cook for 1 minute until fragrant.",
+      "Add mushrooms and cook for 8-10 minutes until they release their liquid and turn golden.",
+      "Sprinkle flour over the mushrooms and stir for 1 minute to cook out the raw flour taste.",
+      "Pour in broth gradually, stirring constantly to avoid lumps. Bring to a simmer.",
+      "Use an immersion blender to partially blend the soup for a creamy yet chunky texture.",
+      "Stir in heavy cream and simmer for 5 minutes. Season with salt and pepper.",
+      "Ladle into bowls, garnish with parsley, and serve with crusty bread."
+    ]
+  },
+  {
+    "id": 15,
+    "recipeId": 15,
+    "about": "A rich and intensely flavoured Indonesian dry curry made with beef slow-cooked in a spiced coconut milk sauce until tender and caramelised. Beef Rendang is a celebratory dish known for its complex and aromatic taste.",
+    "ingredients": [
+      "1kg beef chuck, cut into large cubes",
+      "400ml coconut milk",
+      "2 stalks lemongrass, bruised",
+      "4 kaffir lime leaves",
+      "2 turmeric leaves (optional)",
+      "1 tbsp tamarind paste",
+      "2 tsp sugar",
+      "Salt to taste",
+      "3 tbsp cooking oil",
+      "Spice paste: 8 shallots, 5 cloves garlic, 4 red chilies, 2cm galangal, 2cm ginger, 1 tsp turmeric"
+    ],
+    "instructions": [
+      "Blend all spice paste ingredients together into a smooth paste.",
+      "Heat oil in a large heavy-bottomed pot over medium heat. Fry the spice paste for 5-7 minutes until fragrant and oil separates.",
+      "Add lemongrass, kaffir lime leaves, and turmeric leaves. Stir for 2 minutes.",
+      "Add beef cubes and coat well with the spice paste. Cook for 5 minutes.",
+      "Pour in coconut milk and bring to a boil, stirring frequently.",
+      "Add tamarind paste and sugar. Reduce heat to low.",
+      "Simmer uncovered for 1.5 to 2 hours, stirring occasionally, until the liquid reduces and the beef is very tender.",
+      "Continue cooking until the coconut milk is almost completely absorbed and the meat is dark and caramelised.",
+      "Adjust salt and serve with steamed rice."
+    ]
+  },
+  {
+    "id": 16,
+    "recipeId": 16,
+    "about": "Crispy golden fries tossed in fragrant garlic butter and fresh herbs. These Garlic Butter Fries are the ultimate comfort side dish — irresistibly crunchy on the outside and fluffy on the inside.",
+    "ingredients": [
+      "4 large potatoes, cut into fries",
+      "3 tbsp butter",
+      "4 cloves garlic, minced",
+      "2 tbsp fresh parsley, chopped",
+      "2 tbsp vegetable oil",
+      "1 tsp paprika",
+      "Salt and black pepper",
+      "Parmesan cheese for topping (optional)"
+    ],
+    "instructions": [
+      "Cut potatoes into even fries and soak in cold water for 30 minutes to remove excess starch.",
+      "Drain and pat completely dry with paper towels.",
+      "Preheat oven to 220°C. Toss fries with vegetable oil, paprika, salt, and pepper.",
+      "Spread in a single layer on a baking tray. Bake for 25-30 minutes, flipping halfway, until golden and crispy.",
+      "While fries bake, melt butter in a small pan over medium heat.",
+      "Add minced garlic and cook for 1-2 minutes until fragrant but not browned.",
+      "Remove fries from oven and immediately toss with garlic butter and fresh parsley.",
+      "Top with Parmesan if desired and serve hot."
+    ]
+  },
+  {
+    "id": 17,
+    "recipeId": 17,
+    "about": "A classic Italian no-bake dessert made with layers of espresso-soaked ladyfingers and a rich mascarpone cream, dusted with cocoa powder. Tiramisu is elegant, indulgent, and perfect for entertaining.",
+    "ingredients": [
+      "300g ladyfinger biscuits (savoiardi)",
+      "500g mascarpone cheese",
+      "4 eggs, separated",
+      "100g sugar",
+      "200ml strong espresso, cooled",
+      "3 tbsp Marsala wine or coffee liqueur",
+      "3 tbsp cocoa powder for dusting",
+      "Pinch of salt"
+    ],
+    "instructions": [
+      "Brew strong espresso and let it cool completely. Mix with Marsala wine or liqueur in a shallow bowl.",
+      "Beat egg yolks and sugar together until pale and thick, about 5 minutes.",
+      "Add mascarpone to the egg yolk mixture and fold gently until smooth.",
+      "In a separate bowl, beat egg whites with a pinch of salt until stiff peaks form.",
+      "Fold egg whites into the mascarpone mixture in two batches until just combined.",
+      "Quickly dip each ladyfinger in the espresso mixture for 1-2 seconds and layer in a dish.",
+      "Spread half the mascarpone cream over the ladyfinger layer.",
+      "Repeat with another layer of dipped ladyfingers and the remaining cream.",
+      "Dust generously with cocoa powder. Cover and refrigerate for at least 4 hours or overnight before serving."
+    ]
+  },
+  {
+    "id": 18,
+    "recipeId": 18,
+    "about": "A vibrant and energising matcha green tea smoothie blended with banana, milk, and honey. Packed with antioxidants and natural energy, this smoothie is both beautiful and delicious.",
+    "ingredients": [
+      "1 tsp matcha green tea powder",
+      "1 ripe banana, frozen",
+      "1 cup almond milk or regular milk",
+      "1 tbsp honey or maple syrup",
+      "1/2 cup Greek yogurt",
+      "1/2 cup ice cubes",
+      "Matcha powder for garnish"
+    ],
+    "instructions": [
+      "Add matcha powder to a small bowl with 2 tbsp of warm (not boiling) water and whisk until dissolved and smooth.",
+      "Place frozen banana, Greek yogurt, and milk into a blender.",
+      "Add the dissolved matcha, honey, and ice cubes.",
+      "Blend on high speed for 1-2 minutes until completely smooth and frothy.",
+      "Taste and adjust sweetness with more honey if needed.",
+      "Pour into a tall glass.",
+      "Dust lightly with extra matcha powder and serve immediately."
+    ]
+  },
+  {
+    "id": 19,
+    "recipeId": 19,
+    "about": "A luxurious twist on the classic mac and cheese elevated with earthy truffle oil and a blend of melted cheeses. Creamy, decadent, and utterly indulgent — this grown-up comfort food is next level.",
+    "ingredients": [
+      "400g macaroni or cavatappi pasta",
+      "3 tbsp butter",
+      "3 tbsp all-purpose flour",
+      "2 cups whole milk",
+      "1 cup heavy cream",
+      "150g Gruyere cheese, grated",
+      "150g sharp cheddar, grated",
+      "50g Parmesan, grated",
+      "2 tbsp truffle oil",
+      "Salt, pepper, and nutmeg",
+      "Breadcrumbs for topping"
+    ],
+    "instructions": [
+      "Cook pasta in salted boiling water until just al dente. Reserve 1/2 cup pasta water and drain.",
+      "Melt butter in a large saucepan over medium heat. Add flour and whisk for 1-2 minutes to form a roux.",
+      "Gradually whisk in milk and heavy cream. Cook, stirring constantly, until the sauce thickens, about 5 minutes.",
+      "Remove from heat and stir in Gruyere, cheddar, and Parmesan until fully melted.",
+      "Season with salt, pepper, and a pinch of nutmeg.",
+      "Stir in truffle oil and cooked pasta. Add pasta water if needed to loosen.",
+      "Transfer to a baking dish, top with breadcrumbs and extra Parmesan.",
+      "Bake at 200°C for 15-20 minutes until golden and bubbling. Serve hot."
+    ]
+  },
+  {
+    "id": 20,
+    "recipeId": 20,
+    "about": "A beloved Thai dessert featuring sweet glutinous sticky rice paired with fresh ripe mango and drizzled with rich, salted coconut cream. Simple, fragrant, and irresistibly good.",
+    "ingredients": [
+      "2 cups glutinous rice",
+      "400ml coconut milk",
+      "4 tbsp sugar",
+      "1/2 tsp salt",
+      "2 ripe mangoes, sliced",
+      "1 tsp cornstarch mixed with 2 tbsp water",
+      "Toasted sesame seeds for garnish",
+      "Fresh mint leaves for garnish"
+    ],
+    "instructions": [
+      "Soak glutinous rice in water for at least 4 hours or overnight. Drain well.",
+      "Steam the soaked rice over medium heat for 20-25 minutes until cooked through and translucent.",
+      "While rice steams, heat 300ml coconut milk with 3 tbsp sugar and 1/4 tsp salt over low heat until sugar dissolves. Do not boil.",
+      "Transfer cooked rice to a bowl and pour the warm coconut milk mixture over it. Stir and let it absorb for 20 minutes.",
+      "Make the topping sauce by heating remaining 100ml coconut milk with 1 tbsp sugar and 1/4 tsp salt. Add cornstarch mixture and stir until slightly thickened.",
+      "Peel and slice ripe mangoes.",
+      "Serve sticky rice on a plate alongside mango slices.",
+      "Drizzle the coconut cream topping over the rice and garnish with sesame seeds and mint leaves."
+    ]
+  }
+]
