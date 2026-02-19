@@ -23,6 +23,7 @@
     <color name="category_snack">#F44336</color>
     <color name="category_soup">#FF018786</color>
     <color name="category_default">#9E9E9E</color>
+    <color name="blue">#FF0092C7</color>
 
 
 </resources>

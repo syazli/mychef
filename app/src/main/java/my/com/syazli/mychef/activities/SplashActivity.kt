@@ -72,7 +72,7 @@ class SplashActivity : AppCompatActivity() {
                         val resId = resources.getIdentifier(recipe.imageName, "drawable", packageName)
 
                         if (resId != 0) {
-                            val file = File(filesDir, "${recipe.imageName}.jpg")
+                            val file = File(filesDir, "${recipe.imageName}.webp")
                             if (!file.exists()) {
                                 resources.openRawResource(resId).use { input ->
                                     FileOutputStream(file).use { output ->

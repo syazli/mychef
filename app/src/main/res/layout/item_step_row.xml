@@ -36,7 +36,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/TextInputLayoutStyle"
+        android:theme="@style/TextInputLayoutTheme">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etStep"
@@ -45,6 +46,7 @@
             android:inputType="textMultiLine"
             android:minLines="2"
             android:maxLines="4"
+            android:hint="Describe steps"
             android:imeOptions="actionNext"/>
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.MyChef" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/white</item>
+            <item name="colorPrimaryVariant">@color/white</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -20,6 +20,12 @@
         <item name="color_dialog_primary">@color/black</item>
         <item name="color_dialog_background">@color/white</item>
         <item name="color_button">@color/darkerGrey</item>
+
+        <item name="color_editText_background">@color/white</item>
+        <item name="color_editText_outline">@color/darkGrey</item>
+        <item name="color_editText_outline_selected">@color/blue</item>
+        <item name="color_editText_text">@color/black</item>
+        <item name="color_editText_hint">@color/darkGrey</item>
 
     </style>
 
@@ -66,5 +72,21 @@
 
     <style name="CropTitleStyleBg">
         <item name="android:background">?attr/color_primary</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextColor">?attr/color_primary</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="boxStrokeColor">@color/inputbox_selector</item>
+    </style>
+
+    <style name="TextInputLayoutTheme" parent="Widget.Design.TextInputLayout">
+        <item name="colorControlActivated">?attr/color_text</item>
     </style>
 </resources>

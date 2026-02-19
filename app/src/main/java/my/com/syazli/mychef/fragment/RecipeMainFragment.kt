@@ -1,6 +1,7 @@
 package my.com.syazli.mychef.fragment
 
 import android.content.DialogInterface
+import android.graphics.Bitmap
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,7 +12,10 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.airbnb.lottie.LottieAnimationView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.DecodeFormat
+import com.bumptech.glide.request.RequestOptions
 import my.com.syazli.mychef.R
 import my.com.syazli.mychef.database.dataclass.Recipe
 import my.com.syazli.mychef.database.dataclass.RecipeDescription
@@ -19,6 +23,7 @@ import my.com.syazli.mychef.database.viewmodel.RecipeDescriptionViewModel
 import my.com.syazli.mychef.database.viewmodel.RecipeViewModel
 import my.com.syazli.mychef.databinding.FragmentMainRecipesBinding
 import my.com.syazli.mychef.helpers.DialogHelper
+import my.com.syazli.mychef.helpers.ImageHelper
 import java.io.File
 import kotlin.random.Random
 
@@ -31,8 +36,11 @@ class RecipeMainFragment : Fragment() {
     private var recipeDescriptionData: RecipeDescription? = null
     private val recipeViewModel: RecipeViewModel by viewModels()
     private val recipeDescriptionViewModel: RecipeDescriptionViewModel by viewModels()
+    private lateinit var lottieLoading: LottieAnimationView
 
     private var recipeId: Int = -1
+    private var isRecipeLoaded = false
+    private var isDescriptionLoaded = false
 
     companion object {
         private const val ARG_RECIPE_ID = "recipe_id"
@@ -52,6 +60,8 @@ class RecipeMainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         recipeId = arguments?.getInt(ARG_RECIPE_ID) ?: return
+        lottieLoading = view.findViewById(R.id.lottieLoading)
+        showLoading()
         setupClickListeners()
         observeRecipe()
         observeRecipeDescription()
@@ -69,26 +79,49 @@ class RecipeMainFragment : Fragment() {
             recipe ?: return@observe
             recipeData = recipe
             bindRecipe(recipe)
+
+            isRecipeLoaded = true
+            checkIfFullyLoaded()
         }
     }
+
 
     private fun observeRecipeDescription() {
         recipeDescriptionViewModel.getDescriptionByRecipeId(recipeId).observe(viewLifecycleOwner) { detail ->
             detail ?: return@observe
             recipeDescriptionData = detail
             bindRecipeDescription(detail)
+
+            isDescriptionLoaded = true
+            checkIfFullyLoaded()
         }
     }
 
-    private fun bindRecipe(recipe: Recipe) {
-        val file = File(recipe.imageName)
-        val imagePath = if (file.exists()) file else null
+    private fun checkIfFullyLoaded() {
+        if (isRecipeLoaded && isDescriptionLoaded) {
+            hideLoading()
+        }
+    }
 
+
+    private fun bindRecipe(recipe: Recipe) {
         val favoriteRes = if (recipe.isFavorite) R.drawable.ic_filled_heart else R.drawable.ic_empty_heart
         binding.btnFavorite.setImageResource(favoriteRes)
 
-        Glide.with(this)
-            .load(imagePath ?: requireContext().resources.getIdentifier(recipe.imageName, "drawable", requireContext().packageName))
+        val file = File(recipe.imageName)
+        val glideRequest = if (file.exists()) {
+            Glide.with(this).load(file)
+        } else {
+            val resId = requireContext().resources.getIdentifier(recipe.imageName, "drawable", requireContext().packageName)
+            Glide.with(this).load(if (resId != 0) resId else R.drawable.ic_empty_image)
+        }
+
+        glideRequest
+            .apply(RequestOptions()
+                .format(DecodeFormat.PREFER_RGB_565)
+                .disallowHardwareConfig()
+            )
+            .override(800, 800)
             .centerCrop()
             .placeholder(R.drawable.ic_empty_image)
             .error(R.drawable.ic_empty_image)
@@ -215,4 +248,23 @@ class RecipeMainFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+    private fun showLoading() {
+        lottieLoading.visibility = View.VISIBLE
+        lottieLoading.playAnimation()
+    }
+
+    private fun hideLoading() {
+        lottieLoading.animate()
+            .alpha(0f)
+            .setDuration(300)
+            .withEndAction {
+                lottieLoading.cancelAnimation()
+                lottieLoading.visibility = View.GONE
+                lottieLoading.alpha = 1f
+            }
+            .start()
+    }
+
+
 }

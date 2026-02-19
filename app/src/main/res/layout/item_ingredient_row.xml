@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:hint="e.g., 1 cup sugar"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/TextInputLayoutStyle"
+        android:theme="@style/TextInputLayoutTheme">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etIngredient"

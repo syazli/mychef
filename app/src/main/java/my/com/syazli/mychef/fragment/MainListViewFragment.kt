@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.airbnb.lottie.LottieAnimationView
 import com.google.android.material.chip.ChipGroup
 import com.google.android.material.slider.Slider
 import my.com.syazli.mychef.R
@@ -51,6 +52,8 @@ class MainListViewFragment : Fragment() {
     private var foodList = listOf<FoodModel>()
 
     private val selectedCategories = mutableSetOf<String>()
+    private lateinit var lottieLoading: LottieAnimationView
+
 
     companion object {
         fun newInstance(mIsFromMain: Boolean, mCategory: String? = null) = MainListViewFragment().apply {
@@ -68,6 +71,7 @@ class MainListViewFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        lottieLoading = view.findViewById(R.id.lottieLoading)
         btnBack = view.findViewById(R.id.btnBack)
         rvFoods = view.findViewById(R.id.rvFoods)
         etSearch = view.findViewById(R.id.etSearch)
@@ -81,6 +85,8 @@ class MainListViewFragment : Fragment() {
         btnResetFilter = view.findViewById(R.id.btnResetFilter)
         btnApplyFilter = view.findViewById(R.id.btnApplyFilter)
         btnClosePanel = view.findViewById(R.id.btnClosePanel)
+
+        showLoading()
 
         setupRecyclerView()
         setupObservers()
@@ -108,43 +114,49 @@ class MainListViewFragment : Fragment() {
             }
             foodAdapter.submitList(foodList)
             filterBySelectedCategories()
+            hideLoading()
+
         }
     }
 
     private fun setupSearch() {
-        val adapterSuggestions = ArrayAdapter(
-            requireContext(),
-            android.R.layout.simple_dropdown_item_1line,
-            foodList.map { it.title }
-        )
-        etSearch.setAdapter(adapterSuggestions)
-        etSearch.threshold = 1
-
         etSearch.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
-                val query = s.toString()
-                val filtered = if (query.isEmpty()) {
-                    rvFoods.visibility = if (isFromMain) View.VISIBLE else View.GONE
-                    foodList
-                } else {
-                    rvFoods.visibility = View.VISIBLE
-                    foodList.filter { it.title.contains(query, ignoreCase = true) }
+                val query = s.toString().trim()
+                if (query.isEmpty()) {
+                    filterBySelectedCategories()
+                    return
                 }
+
+                var filtered = foodList
+                if (selectedCategories.isNotEmpty()) {
+                    filtered = filtered.filter { it.category in selectedCategories }
+                }
+
+                category?.let { cat ->
+                    filtered = filtered.filter { it.category == cat }
+                }
+
+                filtered = filtered.filter { it.ingredients <= maxIngredients }
+                filtered = filtered.filter {
+                    val mins = it.duration.filter { ch -> ch.isDigit() }.toIntOrNull() ?: 0
+                    mins <= maxDuration
+                }
+
+                filtered = filtered.filter {
+                    it.title.contains(query, ignoreCase = true)
+                }
+
                 foodAdapter.submitList(filtered)
+                rvFoods.visibility = View.VISIBLE
                 updateResultCount(filtered.size)
             }
 
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         })
-
-        etSearch.setOnItemClickListener { parent, _, position, _ ->
-            val selected = parent.getItemAtPosition(position) as String
-            val filtered = foodList.filter { it.title.equals(selected, ignoreCase = true) }
-            rvFoods.visibility = View.VISIBLE
-            foodAdapter.submitList(filtered)
-        }
     }
+
 
     private fun setupClickListeners() {
         btnBack.setOnClickListener {
@@ -300,4 +312,23 @@ class MainListViewFragment : Fragment() {
         filterPanel.visibility = View.GONE
         dimOverlay.visibility = View.GONE
     }
+
+    private fun showLoading() {
+        lottieLoading.visibility = View.VISIBLE
+        lottieLoading.playAnimation()
+    }
+
+    private fun hideLoading() {
+        lottieLoading.animate()
+            .alpha(0f)
+            .setDuration(300)
+            .withEndAction {
+                lottieLoading.cancelAnimation()
+                lottieLoading.visibility = View.GONE
+                lottieLoading.alpha = 1f
+            }
+            .start()
+    }
+
+
 }
